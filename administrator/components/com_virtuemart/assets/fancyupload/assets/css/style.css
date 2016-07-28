@@ -1,0 +1,62 @@
+a.hover {
+	color: red;
+}
+
+#zip-list, #xls-list {
+	padding: 0;
+	list-style: none;
+	margin: 0;
+}
+
+#zip-list .file-invalid,
+#xls-list .file-invalid {
+	cursor: pointer;
+	color: #514721;
+	padding-left: 48px;
+	line-height: 24px;
+	background: url(/administrator/components/com_virtuemart/assets/fancyupload/assets/error.png) no-repeat 24px 5px;
+	margin-bottom: 1px;
+}
+#zip-list .file-invalid span,
+#xls-list .file-invalid span {
+	background-color: #fff6bf;
+	padding: 1px;
+}
+
+#zip-list .file,
+#xls-list .file {
+	line-height: 2em;
+	padding-left: 22px;
+	background: url(/administrator/components/com_virtuemart/assets/fancyupload/assets/attach.png) no-repeat 1px 50%;
+}
+
+#zip-list .file span,
+#zip-list .file a,
+#zls-list .file span,
+#zls-list .file a {
+	padding: 0 4px;
+}
+
+#zip-list .file .file-size,
+#xls-list .file .file-size {
+	color: #666;
+}
+
+#zip-list .file .file-error,
+#xls-list .file .file-error {
+	color: #8a1f11;
+}
+
+#zip-list .file .file-progress,
+#xls-list .file .file-progress {
+	width: 125px;
+	height: 12px;
+	vertical-align: middle;
+	background-image: url(/administrator/components/com_virtuemart/assets/fancyupload/assets/progress-bar/progress.gif);
+}
+
+.ImportProducts{margin:20px;}
+/*#ImportProducts *,.swiff-uploader-box,.swiff-uploader-box * {font-size:100%;}*/
+.swiff-uploader-box{margin:10px 0 0 12px;}
+#zip-attach-2,
+#xls-attach-2{display:none !important;}

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension version="2.5" type="plugin" group="vmpayment" method="upgrade">
+    <description>PLG_VMPAYMENT_REALEXDESC</description>
+    <name>VMPAYMENT_REALEX</name>
+    <creationDate>February 25 2014</creationDate>
+    <author>The VirtueMart Development Team</author>
+    <authorUrl>http://www.virtuemart.net</authorUrl>
+    <copyright>Copyright (C) 2004-2014 Virtuemart Team. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>2.5.1</version>
+    <description><![CDATA[<a href="http://realex.com" target="_blank">realex</a> is a popular
+	payment provider and available in many countries. ]]>
+    </description>
+    <files>
+        <filename plugin="realex">realex.php</filename>
+    </files>
+    <params addpath="/administrator/components/com_virtuemart/elements"/>
+    <params addpath="/plugins/vmpayment/realex/realex/elements"/>
+    <params>
+
+        <param type="vmtitle" class="realex_title"  default="VMPAYMENT_REALEX_PAYMENT_TITLE"
+               description="VMPAYMENT_REALEX_REGISTER_TIP"/>
+        <param type="spacer" default="" level="level1"/>
+
+        <param type="customjs" default=""/>
+        <param class="level1" type="vmtitle" default="VMPAYMENT_ACCOUNT_PARAMS"/>
+
+        <param name="integration" type="list" default="redirect" label="VMPAYMENT_REALEX_INTEGRATION"
+               description="VMPAYMENT_REALEX_INTEGRATION_TIP">
+            <option value="redirect">VMPAYMENT_REALEX_INTEGRATION_REDIRECT</option>
+            <option value="remote">VMPAYMENT_REALEX_INTEGRATION_REMOTE</option>
+        </param>
+        <param class="sandbox" name="shop_mode" type="radio" default="sandbox" label="VMPAYMENT_REALEX_SHOP_MODE"
+               description="VMPAYMENT_REALEX_SHOP_MODE_TIP">
+            <option value="live">VMPAYMENT_REALEX_LIVE</option>
+            <option value="sandbox">VMPAYMENT_REALEX_SANDBOX</option>
+        </param>
+
+        <!-- REDIRECT PARAMETERS -->
+        <param class="required" name="merchant_id" type="text" size="80" default=""
+               label="VMPAYMENT_REALEX_MERCHANT_ID" description="VMPAYMENT_REALEX_MERCHANT_ID_TIP"/>
+        <param class="required" name="shared_secret" type="text" size="80" default=""
+               label="VMPAYMENT_REALEX_SHARED_SECRET" description="VMPAYMENT_REALEX_SHARED_SECRET_TIP" />
+
+        <param class="required redirect remote" name="subaccount" type="text" size="80" default=""
+               label="VMPAYMENT_REALEX_SUBACCOUNT"/>
+        <param name="creditcards" type="creditcards"   default="" label="VMPAYMENT_REALEX_CREDITCARDS" description="VMPAYMENT_REALEX_CREDITCARDS_TIP">
+            <option value="Visa">VMPAYMENT_REALEX_VISA</option>
+            <option value="Mastercard">VMPAYMENT_REALEX_MASTERCARD</option>
+            <option value="AmericanExpress">VMPAYMENT_REALEX_AMERICANEXPRESS</option>
+        </param>
+
+
+        <param class="redirect dcc_choice" name="settlement" type="list" default="1" label="VMPAYMENT_REALEX_SETTLEMENT"
+               description="VMPAYMENT_REALEX_SETTLEMENT_TIP">
+            <option value="1">VMPAYMENT_REALEX_SETTLEMENT_AUTO</option>
+            <option value="0">VMPAYMENT_REALEX_SETTLEMENT_DELAYED</option>
+        </param>
+
+
+        <param class="remote" name="threedsecure" type="list" default="1" label="VMPAYMENT_REALEX_3DSECURE"
+               description="VMPAYMENT_REALEX_3DSECURE_TIP">
+            <option value="0">COM_VIRTUEMART_NO</option>
+            <option value="1">COM_VIRTUEMART_YES</option>
+        </param>
+
+        <param class="remote" name="require_liability" type="list" default="1" label="VMPAYMENT_REALEX_REQUIRE_LIABILITY"
+               description="VMPAYMENT_REALEX_REQUIRE_LIABILITY_TIP">
+            <option value="0">COM_VIRTUEMART_NO</option>
+            <option value="1">COM_VIRTUEMART_YES</option>
+        </param>
+
+        <param class="redirect remote" name="realvault" type="list" default="sandbox" label="VMPAYMENT_REALEX_REALVAULT"
+               description="VMPAYMENT_REALEX_REALVAULT_TIP">
+            <option value="0">COM_VIRTUEMART_NO</option>
+            <option value="1">COM_VIRTUEMART_YES</option>
+        </param>
+        <param class="realvault" name="offer_save_card" type="list" default="sandbox" label="VMPAYMENT_REALEX_OFFER_SAVE_CARD"
+               description="VMPAYMENT_REALEX_OFFER_SAVE_CARD_TIP">
+            <option value="0">COM_VIRTUEMART_NO</option>
+            <option value="1">COM_VIRTUEMART_YES</option>
+        </param>
+
+
+        <param class="" name="card_payment_button" type="text" size="80" default=""
+               label="VMPAYMENT_REALEX_CARD_PAYMENT_BUTTON" description="VMPAYMENT_REALEX_CARD_PAYMENT_BUTTON_TIP"/>
+
+        <param name="tss" type="list" default="1"
+               label="VMPAYMENT_REALEX_TSS"
+               description="VMPAYMENT_REALEX_TSS_TIP" >
+            <option value="0">COM_VIRTUEMART_NO</option>
+            <option value="1">COM_VIRTUEMART_YES</option>
+        </param>
+        <param name="dcc" type="list" default="0"
+               label="VMPAYMENT_REALEX_DCC"
+               description="VMPAYMENT_REALEX_DCC_TIP" >
+            <option value="0">COM_VIRTUEMART_NO</option>
+            <option value="1">COM_VIRTUEMART_YES</option>
+        </param>
+
+        <param class="remote dcc" name="dcc_service" type="list" default="1"
+               label="VMPAYMENT_REALEX_DCC_SERVICE"
+               description="VMPAYMENT_REALEX_DCC__CHOICETIP" >
+            <option value="fexco">VMPAYMENT_REALEX_DCC_FEXCO</option>
+            <option value="euroconex">VMPAYMENT_REALEX_DCC_EUROCONEX</option>
+        </param>
+
+        <param class="" name="referring_url" type="referringurl" size="80" default=""
+               label="VMPAYMENT_REALEX_REFERRING_URL" description="VMPAYMENT_REALEX_REFERRING_URL_TIP"/>
+
+        <param type="vmtitle" default="VMPAYMENT_REALEX_ORDER_STATUS_SECTION"
+               description="VMPAYMENT_REALEX_ORDER_STATUS_SECTION_DESC"/>
+
+
+        <param name="status_success" type="vmorderstate" scope="com_virtuemart" default="C"
+               label="VMPAYMENT_REALEX_STATUS_SUCCESS" description="VMPAYMENT_REALEX_STATUS_SUCCESS_TIP"/>
+        <param name="status_canceled" type="vmorderstate" scope="com_virtuemart" default="X"
+               label="VMPAYMENT_REALEX_STATUS_CANCEL" description="VMPAYMENT_REALEX_STATUS_CANCEL_TIP"/>
+        <param class="settlement" name="status_capture" type="vmorderstate" scope="com_virtuemart" default="S"
+               label="VMPAYMENT_REALEX_STATUS_CAPTURE" description="VMPAYMENT_REALEX_STATUS_CAPTURE_TIP"/>
+
+        <param name="status_rebate" type="vmorderstate" scope="com_virtuemart" default="R"
+               label="VMPAYMENT_REALEX_STATUS_REBATE" description="VMPAYMENT_REALEX_STATUS_REBATE_TIP"/>
+
+        <param class="required dcc_choice" name="rebate_password" type="text" size="80" default=""
+               label="VMPAYMENT_REALEX_REBATE_PASSWORD" description="VMPAYMENT_REALEX_REBATE_PASSWORD_TIP" />
+
+        <param name="status_partial_refunded" type="vmorderstate" scope="com_virtuemart" default="R"
+               label="VMPAYMENT_REALEX_STATUS_PARTIAL_REFUND"
+               description="VMPAYMENT_REALEX_STATUS_PARTIAL_REFUND_TIP"/>
+
+
+        <param class="level1" type="vmtitle" default="VMPAYMENT_REALEX_OPTIONAL_PARAMS"/>
+
+
+        <!-- Restrictions -->
+        <!-- ============ -->
+        <param type="vmtitle" default="VMPAYMENT_REALEX_RESTRICTIONS_SECTION"
+               description="VMPAYMENT_REALEX_RESTRICTIONS_SECTION_DESC"/>
+        <param name="countries" type="vmcountries" scope="com_virtuemart" default=""
+               label="VMPAYMENT_REALEX_COUNTRIES" description="VMPAYMENT_REALEX_COUNTRIES_DESC"/>
+        <param name="min_amount" type="text" label="VMPAYMENT_REALEX_MIN_AMOUNT"
+               description="VMPAYMENT_REALEX_MIN_AMOUNT_TIP"/>
+        <param name="max_amount" type="text" label="VMPAYMENT_REALEX_MAX_AMOUNT"
+               description="VMPAYMENT_REALEX_MAX_AMOUNT_TIP"/>
+
+        <!-- Currencies -->
+        <!-- ============ -->
+        <param type="vmtitle" default="VMPAYMENT_REALEX_CURRENCIES_SECTION"
+               description="VMPAYMENT_REALEX_CURRENCIES_SECTION_DESC"/>
+
+        <param name="payment_currency" type="vmacceptedcurrency" default="" label="VMPAYMENT_REALEX_CURRENCY"
+               description="VMPAYMENT_REALEX_CURRENCY_DESC"/>
+        <param name="email_currency" type="list" default="vendor" label="VMPAYMENT_REALEX_EMAIL_CURRENCY"
+               description="VMPAYMENT_REALEX_EMAIL_CURRENCY_DESC">
+            <option value="vendor">VMPAYMENT_REALEX_EMAIL_CURRENCY_VENDOR</option>
+            <option value="payment">VMPAYMENT_REALEX_EMAIL_CURRENCY_PAYMENT</option>
+        </param>
+
+
+        <!-- Discounts -->
+        <!-- ============ -->
+        <param type="vmtitle" default="VMPAYMENT_REALEX_DISCOUNT_FEE_SECTION"
+               description="VMPAYMENT_REALEX_DISCOUNT_FEE_SECTION_DESC"/>
+        <param name="cost_per_transaction" type="text" label="VMPAYMENT_REALEX_COST_PER_TRANSACTION"
+               description="VMPAYMENT_REALEX_COST_PER_TRANSACTION_TIP"/>
+        <param name="cost_percent_total" type="text" label="VMPAYMENT_REALEX_COST_PERCENT_TOTAL"
+               description="VMPAYMENT_REALEX_COST_PERCENT_TOTAL_TIP"/>
+        <param name="tax_id" type="vmtaxes" scope="com_virtuemart" label="VMPAYMENT_REALEX_TAX"
+               description="VMPAYMENT_REALEX_TAX_TIP"/>
+
+
+        <param type="vmtitle" default="VMPAYMENT_REALEX_TEMPLATE_SECTION"
+               description=""/>
+        <param	name="payment_logos" type="vmfiles" label="VMPAYMENT_REALEX_LOGOS"
+                  description="VMPAYMENT_REALEX_LOGOS_DESC"
+                  directory="/images/stories/virtuemart/payment"
+                  default="default" hide_default="1" hide_none="1"
+                  stripext="0"   exclude="^_" />
+        <param	class="remote" name="cvv_images" type="vmfiles" label="VMPAYMENT_REALEX_CVV_IMAGES"
+                  description="VMPAYMENT_REALEX_CVV_IMAGES_DESC"
+                  directory="/images/stories/virtuemart/payment"
+                  default="default" hide_default="1" hide_none="1"
+                  stripext="0"   exclude="^_" />
+
+
+        <param type="vmtitle" default="VMPAYMENT_REALEX_DEBUG_SECTION"
+               description="VMPAYMENT_REALEX_DEBUG_SECTION_DESC"/>
+        <param name="debug" type="radio" default="0" label="VMPAYMENT_REALEX_DEBUG_SECTION">
+            <option value="0">COM_VIRTUEMART_NO</option>
+            <option value="1">COM_VIRTUEMART_YES</option>
+        </param>
+        <param name="log" type="radio" default="0" label="VMPAYMENT_REALEX_LOG"
+               description="VMPAYMENT_REALEX_LOG_DESC">
+            <option value="0">COM_VIRTUEMART_NO</option>
+            <option value="1">COM_VIRTUEMART_YES</option>
+        </param>
+
+    </params>
+
+
+</extension>

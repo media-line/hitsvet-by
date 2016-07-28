@@ -1,0 +1,606 @@
+<html>
+<head>
+<!-- revisium.com/ai/ -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<META NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW">
+<title>Отчет по D:\��������\backup-Jul-14-2015-2\domains\hitsvet.by\public_html</title>
+<style type="text/css" title="currentStyle">
+	@import "http://revisium.com/extra/media/css/demo_page2.css";
+	@import "http://revisium.com/extra/media/css/jquery.dataTables2.css";
+</style>
+
+<script type="text/javascript" language="javascript" src="http://yandex.st/jquery/2.1.0/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://datatables.net/download/build/jquery.dataTables.js"></script>
+
+<style type="text/css">
+ body 
+ {
+   font-family: Tahoma;
+   color: #5a5a5a;
+   background: #FFFFFF;
+   font-size: 14px;
+   margin: 20px;
+   padding: 0;
+ }
+
+.header
+ {
+   font-size: 34px;
+   margin: 0 0 10px 0;
+ }
+
+ .hidd
+ {
+    display: none;
+ }
+ 
+ .ok
+ {
+    color: green;
+ }
+ 
+ .line_no
+ {
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+
+   background: #DAF2C1;
+   padding: 2px 5px 2px 5px;
+   margin: 0 5px 0 5px;
+ }
+ 
+ .credits_header 
+ {
+  -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+
+   background: #F2F2F2;
+   padding: 10px;
+   font-size: 11px;
+    margin: 0 0 10px 0;
+ }
+ 
+ .marker
+ {
+    color: #FF0090;
+	font-weight: 100;
+	background: #FF0090;
+	padding: 2px 0px 2px 0px;
+	width: 2px;
+ }
+ 
+ .title
+ {
+   font-size: 24px;
+   margin: 20px 0 10px 0;
+   color: #9CA9D1;
+}
+
+.summary 
+{
+  float: left;
+  width: 500px;
+}
+
+.summary TD
+{
+  font-size: 12px;
+  border-bottom: 1px solid #F0F0F0;
+  font-weight: 700;
+  padding: 10px 0 10px 0;
+}
+ 
+.crit, .vir
+{
+  color: #D84B55;
+}
+
+.spacer
+{
+   margin: 0 0 50px 0;
+   clear:both;
+}
+
+.warn
+{
+  color: #F6B700;
+}
+
+.clear
+{
+   clear: both;
+}
+
+.offer
+{
+  -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+
+   width: 500px;
+   background: #ECF7DE;
+   color: #747474;
+   font-size: 11px;
+   font-family: Arial;
+   padding: 20px;
+   margin: 20px 0 0 500px;
+   
+   font-size: 16px;
+}
+ 
+.flist
+{
+   font-family: Arial;
+}
+
+.flist TD
+{
+   font-size: 11px;
+   padding: 5px;
+}
+
+.flist TH
+{
+   font-size: 12px;
+   height: 30px;
+   padding: 5px;
+   background: #CEE9EF;
+}
+
+
+.it
+{
+   font-size: 14px;
+   font-weight: 100;
+   margin-top: 10px;
+}
+
+.crit .it A {
+   color: #E50931; 
+   line-height: 25px;
+   text-decoration: none;
+}
+
+.warn .it A {
+   color: #F2C900; 
+   line-height: 25px;
+   text-decoration: none;
+}
+
+
+
+.details
+{
+   font-family: Calibri;
+   font-size: 12px;
+   margin: 10px 10px 10px 0px;
+}
+
+.crit .details
+{
+   color: #A08080;
+}
+
+.warn .details
+{
+   color: #808080;
+}
+
+.details A
+{
+  color: #FFF;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 2px;
+  background: #E5CEDE;
+  -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+}
+
+.details A:hover
+{
+   background: #A0909B;
+}
+
+.ctd
+{
+   margin: 10px 0px 10px 0;
+   align:center;
+}
+
+.ctd A 
+{
+   color: #0D9922;
+}
+
+.disclaimer
+{
+   color: darkgreen;
+   margin: 10px 10px 10px 0;
+}
+
+.note_vir
+{
+   margin: 10px 0 10px 0;
+   //padding: 10px;
+   color: #FF4F4F;
+   font-size: 15px;
+   font-weight: 700;
+   clear:both;
+  
+}
+
+.note_warn
+{
+   margin: 10px 0 10px 0;
+   color: #F6B700;
+   font-size: 15px;
+   font-weight: 700;
+   clear:both;
+}
+
+.updateinfo
+{
+  color: #FFF;
+  text-decoration: none;
+  background: #E5CEDE;
+  -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+
+  margin: 10px 0 10px 0px;   
+  padding: 10px;
+}
+
+
+.caution
+{
+  color: #EF7B75;
+  text-decoration: none;
+  margin: 20px 0 0px 0px;   
+  font-size: 12px;
+}
+
+.footer
+{
+  color: #303030;
+  text-decoration: none;
+  background: #F4F4F4;
+  -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+
+  margin: 80px 0 10px 0px;   
+  padding: 10px;
+}
+
+.rep
+{
+  color: #303030;
+  text-decoration: none;
+  background: #94DDDB;
+  -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+
+  margin: 10px 0 10px 0px;   
+  padding: 10px;
+  font-size: 12px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="header">Отчет сканера AI-Bolit v20150701: D:\��������\backup-Jul-14-2015-2\domains\hitsvet.by\public_html (2)</div>
+<div class="credits_header">Скрипт бесплатный только для личного некоммерческого использования. Есть <a href="http://revisium.com/ai/faq.php#faq11" target=_blank>коммерческая лицензия</a> (пункт №11).</div>
+<div class="details_header">
+   Затрачено времени: <b>15 s</b>. Сканирование начато 23-07-2015 в 09:07:46, сканирование завершено 23-07-2015 в 09:08:02<br/>
+   Всего проверено 0 директорий и 47 файлов. Использовано памяти при сканировании: 9.84 Mb.
+ </div>
+
+ 
+ 
+ <div class="summary">
+<div class="title">Сводный отчет</div><table cellspacing=0 border=0><tr><td class="crit" width=400>Вредоносных скриптов</td><td class="crit">19</td></tr><tr><td class="crit" width=400>JS Вирусов</td><td class="crit">1</td></tr><tr><td class="crit" width=400>IFRAME вставок</td><td class="crit">1</td></tr><tr><td class="crit" width=400>Зашифрованных файлов</td><td class="crit">12</td></tr></table><div class=details style="margin: 20px 20px 20px 0">Обращаем внимание, что обнаруженные файлы не всегда являются вирусами и хакерскими скриптами. Сканер старается минимизировать число ложных обнаружений, но это не всегда возможно, так как найденный фрагмент может встречаться как во вредоносных скриптах, так и в обычных.</div>
+
+ </div>
+ 
+ <div class="offer">
+    <div>
+	 <div class="crit" style="font-size: 17px;"><b>Внимание! На вашем сайте обнаружен вредоносный код</b>.</div> 
+	 <br/>Скорее всего, ваш сайт был взломан и заражен. Вашему сайту требуется помощь специалистов по информационной безопасности.
+	</div>
+	<br/>
+	<div>
+	   Обратитесь в <a href="http://revisium.com/" target=_blank>компанию "Ревизиум"</a> за консультацией или закажите лечение сайта и защиту от взлома.<br/>
+	</div>
+	<br/>
+	<div>
+	   <a href="mailto:ai@revisium.com">ai@revisium.com</a>, <a href="http://revisium.com/ru/order/">http://revisium.com</a>
+	</div>
+    <div class="caution">Не оставляйте файл отчета на сервере, и не давайте на него прямых ссылок с других сайтов. Информация из отчета может быть использована злоумышленника для взлома сайта, так как содержит информацию о файлах и настройках сервера.</div>
+ </div>
+  
+ <div class="clear"></div>
+ 
+ <div class="rep">Просканированы только файлы, перечисленные в AI-BOLIT-DOUBLECHECK.php. Для полного сканирования удалите файл AI-BOLIT-DOUBLECHECK.php и запустите сканер повторно.</div><div class="title">Критические замечания</div><div class="note_vir">Эти файлы могут быть вредоносными или хакерскими скриптами (19)</div><div class="crit"><div class="flist"><table cellspacing=1 cellpadding=4 border=0 id="table_crit"><thead><tr class="tbgh0"><th width=50%>Путь</th><th>Изменение свойств</th><th>Изменение содержимого</th><th width=90>Размер</th><th width=0 class="hidd">CRC32</th><th width=0 class="hidd"></th><th width=0 class="hidd"></th><th width=0 class="hidd"></th></tr></thead><tbody><tr class="tbg0" o="id_x107902233"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./administrator/components/com_admin/models/sysinfo.php&ph=795090069&c=-2142135687">./administrator/components/com_admin/models/sysinfo.php</a></div><div class="details"><a href="#" onclick="return hsig('id_x107902233')">[x]</a> <span class="line_no">43</span>  ...t']	= ini_get('session.auto_start');
+			$this-&gt;php_settings['disable_functions']<span class="marker">&nbsp;</span>	= ini_get('disable_functions');
+			$this-&gt;php_settings['xml']					= extension_</div></td><td align=center><div class="ctd">22/07/2015 10:32:33</div></td><td align=center><div class="ctd">05/03/2014 20:46:58</div></td><td align=center><div class="ctd">7.66 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546753</div></td><td class="hidd"><div class="hidd">1394038018</div></td><td class="hidd"><div class="hidd">id_x107902233</div></td></tr><tr class="tbg1" o="id_1443379767"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./administrator/components/com_jce/classes/packer.php&ph=795090069&c=-331526158">./administrator/components/com_jce/classes/packer.php</a></div><div class="details"><a href="#" onclick="return hsig('id_1443379767')">[x]</a> <span class="line_no">151</span>  ...tCss($data) {
+        if (preg_match_all('#@import url\([\'&quot;]?([^\'&quot;\)]+)[\'&quot;]?\<span class="marker">&nbsp;</span>);#i', $data, $matches)) {
+
+            $data = '';
+
+            foreach ($matc</div></td><td align=center><div class="ctd">22/07/2015 10:32:35</div></td><td align=center><div class="ctd">07/03/2014 16:22:54</div></td><td align=center><div class="ctd">6.58 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546755</div></td><td class="hidd"><div class="hidd">1394194974</div></td><td class="hidd"><div class="hidd">id_1443379767</div></td></tr><tr class="tbg0" o="id_1076965839"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./administrator/components/com_virtuemart/assets/fancyupload/showcase/script.php&ph=795090069&c=860961184">./administrator/components/com_virtuemart/assets/fancyupload/showcase/script.php</a></div><div class="details"><a href="#" onclick="return hsig('id_1076965839')">[x]</a> <span class="line_no">54</span>  ..._name'])) {
+	$error = 'Invalid Upload';
+}
+ 
+
+ 
+ 
+// Processing
+ 
+
+
+  <span class="marker">&nbsp;</span>move_uploaded_file($_FILES['Filedata']['tmp_name'], $_SERVER['DOCUMENT_ROOT'].'</div></td><td align=center><div class="ctd">22/07/2015 10:32:33</div></td><td align=center><div class="ctd">07/04/2014 13:00:54</div></td><td align=center><div class="ctd">4.13 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546753</div></td><td class="hidd"><div class="hidd">1396861254</div></td><td class="hidd"><div class="hidd">id_1076965839</div></td></tr><tr class="tbg1" o="id_x1616811755"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./administrator/components/com_virtuemart/assets/PHPExcel/Shared/File.php&ph=795090069&c=-2135782959">./administrator/components/com_virtuemart/assets/PHPExcel/Shared/File.php</a></div><div class="details"><a href="#" onclick="return hsig('id_x1616811755')">[x]</a> <span class="line_no">67</span>  ... PHP 5.2.1
+		// http://php.net/manual/en/function.sys-get-temp-dir.php#94119
+
+		<span class="marker">&nbsp;</span>if ( !function_exists('sys_get_temp_dir')) {
+			if ($temp = getenv('TMP') ) {
+	</div></td><td align=center><div class="ctd">22/07/2015 10:32:34</div></td><td align=center><div class="ctd">07/04/2014 15:25:06</div></td><td align=center><div class="ctd">3.92 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546754</div></td><td class="hidd"><div class="hidd">1396869906</div></td><td class="hidd"><div class="hidd">id_x1616811755</div></td></tr><tr class="tbg0" o="id_2043696754"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./administrator/components/com_virtuemart/assets/PHPExcel/Shared/OLE/PPS/Root.php&ph=795090069&c=-1116220314">./administrator/components/com_virtuemart/assets/PHPExcel/Shared/OLE/PPS/Root.php</a></div><div class="details"><a href="#" onclick="return hsig('id_2043696754')">[x]</a> <span class="line_no">209</span>  ... $i1stBdL)) {
+					break;
+				}
+			}
+		}
+
+		// Save Header
+		fwrite($FILE,
+				&quot;<span class="marker">&nbsp;</span>\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1&quot;
+				. &quot;\x00\x00\x00\x00&quot;
+				. &quot;\x00\x00\x00\</div></td><td align=center><div class="ctd">22/07/2015 10:32:34</div></td><td align=center><div class="ctd">07/04/2014 15:25:12</div></td><td align=center><div class="ctd">13.89 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546754</div></td><td class="hidd"><div class="hidd">1396869912</div></td><td class="hidd"><div class="hidd">id_2043696754</div></td></tr><tr class="tbg1" o="id_2043696754"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./administrator/components/com_virtuemart/assets/PHPExcel/Shared/OLE.php&ph=795090069&c=-1924661351">./administrator/components/com_virtuemart/assets/PHPExcel/Shared/OLE.php</a></div><div class="details"><a href="#" onclick="return hsig('id_2043696754')">[x]</a> <span class="line_no">105</span>  ...$file&quot;);
+		}
+		$this-&gt;_file_handle = $fh;
+
+		$signature = fread($fh, 8);
+		if (&quot;<span class="marker">&nbsp;</span>\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1&quot; != $signature) {
+			throw new Exception(&quot;File</div></td><td align=center><div class="ctd">22/07/2015 10:32:34</div></td><td align=center><div class="ctd">07/04/2014 15:25:06</div></td><td align=center><div class="ctd">14.66 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546754</div></td><td class="hidd"><div class="hidd">1396869906</div></td><td class="hidd"><div class="hidd">id_2043696754</div></td></tr><tr class="tbg0" o="id_1443379767"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./administrator/components/com_virtuemart/models/media.php&ph=795090069&c=762880148">./administrator/components/com_virtuemart/models/media.php</a></div><div class="details"><a href="#" onclick="return hsig('id_1443379767')">[x]</a> <span class="line_no">224</span>  ...
+			$whereString = ' ';
+		}
+
+
+		$orderBy = $this-&gt;_getOrdering($orderByTable<span class="marker">&nbsp;</span>);#
+
+		if(count($selectFields)&gt;0){
+
+			$select = implode(', ', $selectField</div></td><td align=center><div class="ctd">22/07/2015 10:32:33</div></td><td align=center><div class="ctd">10/03/2014 12:02:20</div></td><td align=center><div class="ctd">14.20 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546753</div></td><td class="hidd"><div class="hidd">1394438540</div></td><td class="hidd"><div class="hidd">id_1443379767</div></td></tr><tr class="tbg1" o="id_1443379767"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./administrator/components/com_virtuemart/models/shipmentmethod.php&ph=795090069&c=819111535">./administrator/components/com_virtuemart/models/shipmentmethod.php</a></div><div class="details"><a href="#" onclick="return hsig('id_1443379767')">[x]</a> <span class="line_no">49</span>  ...s-&gt;_data[$this-&gt;_id]-&gt;virtuemart_shoppergroup_ids = $this-&gt;_db-&gt;loadResultArray(<span class="marker">&nbsp;</span>);#
+				if(empty($this-&gt;_data[$this-&gt;_id]-&gt;virtuemart_shoppergroup_ids)) $this</div></td><td align=center><div class="ctd">22/07/2015 10:32:33</div></td><td align=center><div class="ctd">10/03/2014 12:02:20</div></td><td align=center><div class="ctd">7.90 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546753</div></td><td class="hidd"><div class="hidd">1394438540</div></td><td class="hidd"><div class="hidd">id_1443379767</div></td></tr><tr class="tbg0" o="id_1720924472"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./administrator/components/com_virtuemart/views/updatesmigration/tmpl/update_preview.php&ph=795090069&c=1767653153">./administrator/components/com_virtuemart/views/updatesmigration/tmpl/update_preview.php</a></div><div class="details"><a href="#" onclick="return hsig('id_1720924472')">[x]</a> <span class="line_no">52</span>  ...k_dir = dirname( $check_dir );
+				$is_writable = is_writable($check_dir ) || @<span class="marker">&nbsp;</span>chmod($checkdir, 0755);  				
+  				
+  			}
+  			
+  		}
+  	}
+  	if( !$is_</div></td><td align=center><div class="ctd">22/07/2015 10:32:35</div></td><td align=center><div class="ctd">10/03/2014 12:02:22</div></td><td align=center><div class="ctd">4.55 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546755</div></td><td class="hidd"><div class="hidd">1394438542</div></td><td class="hidd"><div class="hidd">id_1720924472</div></td></tr><tr class="tbg1" o="id_x825932142"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./administrator/modules/mod_menu/tmpl/general47.php&ph=795090069&c=-325828059">./administrator/modules/mod_menu/tmpl/general47.php</a></div><div class="details"><a href="#" onclick="return hsig('id_x825932142')">[x]</a> <span class="line_no">6</span>  ...r'=&gt;'7', 'u'=&gt;'n', 't'=&gt;'H', 'w'=&gt;'f', 'v'=&gt;'y', 'y'=&gt;'p', 'x'=&gt;'R', 'z'=&gt;'B');
+<span class="marker">&nbsp;</span>eval(ujzqf($cazzbslag, $bapzwyss));?</div></td><td align=center><div class="ctd">22/07/2015 10:32:36</div></td><td align=center><div class="ctd">12/07/2015 19:55:16</div></td><td align=center><div class="ctd">151.48 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546756</div></td><td class="hidd"><div class="hidd">1436716516</div></td><td class="hidd"><div class="hidd">id_x825932142</div></td></tr><tr class="tbg0" o="id_639815287"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./cgi-bin/.htaccess&ph=795090069&c=1821189253">./cgi-bin/.htaccess</a></div><div class="details"><a href="#" onclick="return hsig('id_639815287')">[x]</a> <span class="line_no">2</span>  Options -Indexes +ExecCGI
+<span class="marker">&nbsp;</span>AddHandler cgi-script .cgi .pl</div></td><td align=center><div class="ctd">22/07/2015 10:32:25</div></td><td align=center><div class="ctd">07/03/2014 16:07:06</div></td><td align=center><div class="ctd">57 b</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546745</div></td><td class="hidd"><div class="hidd">1394194026</div></td><td class="hidd"><div class="hidd">id_639815287</div></td></tr><tr class="tbg1" o="id_1798932142"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./images/slider/slide_6.png&ph=795090069&c=655682168">./images/slider/slide_6.png</a></div><div class="details"><a href="#" onclick="return hsig('id_1798932142')">[x]</a> <span class="line_no">496</span>  .../���}?��o�a^:��=�ݎ�Ǐy�����;����Ҥ��'Os��q}}��b@u�h��Ԡ2�,cC�4ʢ�h���<span class="marker">&nbsp;</span>a(T=)|-}��죘)�ɵ��tD�ge��N�&amp;��\uw|b�[{�}Lp8��/��Ag�d�y!����K���Z�YY</div></td><td align=center><div class="ctd">22/07/2015 10:33:23</div></td><td align=center><div class="ctd">16/05/2014 10:18:24</div></td><td align=center><div class="ctd">392.63 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546803</div></td><td class="hidd"><div class="hidd">1400221104</div></td><td class="hidd"><div class="hidd">id_1798932142</div></td></tr><tr class="tbg0" o="id_2043696754"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./libraries/tcpdf/qrcode.php&ph=795090069&c=-1013910982">./libraries/tcpdf/qrcode.php</a></div><div class="details"><a href="#" onclick="return hsig('id_2043696754')">[x]</a> <span class="line_no">2510</span>  ...
+	protected function putFinderPattern($frame, $ox, $oy) {
+		$finder = array(
+		&quot;<span class="marker">&nbsp;</span>\xc1\xc1\xc1\xc1\xc1\xc1\xc1&quot;,
+		&quot;\xc1\xc0\xc0\xc0\xc0\xc0\xc1&quot;,
+		&quot;\xc1\xc0\xc</div></td><td align=center><div class="ctd">22/07/2015 10:32:28</div></td><td align=center><div class="ctd">10/03/2014 12:02:54</div></td><td align=center><div class="ctd">78.27 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546748</div></td><td class="hidd"><div class="hidd">1394438574</div></td><td class="hidd"><div class="hidd">id_2043696754</div></td></tr><tr class="tbg1" o="id_2043696754"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./libraries/tcpdf/tcpdf.php&ph=795090069&c=1044440635">./libraries/tcpdf/tcpdf.php</a></div><div class="details"><a href="#" onclick="return hsig('id_2043696754')">[x]</a> <span class="line_no">905</span>  ...*
+	 * Encryption padding string.
+	 * @protected
+	 */
+	protected $enc_padding = &quot;<span class="marker">&nbsp;</span>\x28\xBF\x4E\x5E\x4E\x75\x8A\x41\x64\x00\x4E\x56\xFF\xFA\x01\x08\x2E\x2E\x00\xB</div></td><td align=center><div class="ctd">22/07/2015 10:32:28</div></td><td align=center><div class="ctd">10/03/2014 12:02:54</div></td><td align=center><div class="ctd">1.04 Mb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546748</div></td><td class="hidd"><div class="hidd">1394438574</div></td><td class="hidd"><div class="hidd">id_2043696754</div></td></tr><tr class="tbg0" o="id_2043696754"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./libraries/tcpdf/tcpdf_parser.php&ph=795090069&c=-1848583879">./libraries/tcpdf/tcpdf_parser.php</a></div><div class="details"><a href="#" onclick="return hsig('id_2043696754')">[x]</a> <span class="line_no">237</span>  ...type = $char;
+				++$offset;
+				if (preg_match('/^([^\x00\x09\x0a\x0c\x0d\x20\s<span class="marker">&nbsp;</span>\x28\x29\x3c\x3e\x5b\x5d\x7b\x7d\x2f\x25]+)/', substr($this-&gt;pdfdata, $offset, </div></td><td align=center><div class="ctd">22/07/2015 10:32:28</div></td><td align=center><div class="ctd">10/03/2014 12:02:54</div></td><td align=center><div class="ctd">16.11 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546748</div></td><td class="hidd"><div class="hidd">1394438574</div></td><td class="hidd"><div class="hidd">id_2043696754</div></td></tr><tr class="tbg1" o="id_1280370779"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./plugins/content/geshi/geshi/geshi/php.php&ph=795090069&c=-501357476">./plugins/content/geshi/geshi/geshi/php.php</a></div><div class="details"><a href="#" onclick="return hsig('id_1280370779')">[x]</a> <span class="line_no">682</span>  ...unction_copy','runkit_function_redefine',
+            'runkit_function_remove','<span class="marker">&nbsp;</span>runkit_function_rename','runkit_import',
+            'runkit_lint','runkit_lint</div></td><td align=center><div class="ctd">22/07/2015 10:32:37</div></td><td align=center><div class="ctd">24/07/2013 08:50:02</div></td><td align=center><div class="ctd">68.83 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546757</div></td><td class="hidd"><div class="hidd">1374641402</div></td><td class="hidd"><div class="hidd">id_1280370779</div></td></tr><tr class="tbg0" o="id_186686359"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./plugins/vmpayment/heidelpay/heidelpay/heidelpay_response.php&ph=795090069&c=-1569865670">./plugins/vmpayment/heidelpay/heidelpay/heidelpay_response.php</a></div><div class="details"><a href="#" onclick="return hsig('id_186686359')">[x]</a> <span class="line_no">108</span>  ...ay($_POST['IDENTIFICATION_TRANSACTIONID'], $config);
+		print $redirectURL;
+	}
+} <span class="marker">&nbsp;</span>else {
+	echo 'FAIL';
+}
+
+?&gt;
+
+</div></td><td align=center><div class="ctd">22/07/2015 10:32:37</div></td><td align=center><div class="ctd">22/07/2015 14:29:39</div></td><td align=center><div class="ctd">5.76 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546757</div></td><td class="hidd"><div class="hidd">1437560979</div></td><td class="hidd"><div class="hidd">id_186686359</div></td></tr><tr class="tbg1" o="id_807256699"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./sxd/lang/update.php&ph=795090069&c=-2069158689">./sxd/lang/update.php</a></div><div class="details"><a href="#" onclick="return hsig('id_807256699')">[x]</a> <span class="line_no">15</span>  ...ndle);
+    if(count($langlist) &gt; 0){
+    	$fp = fopen('list.php', 'w');
+    	<span class="marker">&nbsp;</span>fwrite($fp, &quot;&lt;?php\n\$langs = &quot; . var_export($langlist, 1) . &quot;;\n?&gt;&quot;);
+	}
+}
+</div></td><td align=center><div class="ctd">22/07/2015 10:33:45</div></td><td align=center><div class="ctd">09/11/2009 17:14:36</div></td><td align=center><div class="ctd">560 b</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546825</div></td><td class="hidd"><div class="hidd">1257772476</div></td><td class="hidd"><div class="hidd">id_807256699</div></td></tr><tr class="tbg0" o="id_182552650"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./templates/hitsvet/images/logo_top1.png&ph=795090069&c=2018963599">./templates/hitsvet/images/logo_top1.png</a></div><div class="details"><a href="#" onclick="return hsig('id_182552650')">[x]</a> <span class="line_no">23</span>  ...�pw�#�&amp;�X��'�:;���\�v�����z\�� �(�� �B��&lt;_�q�c�&lt;Bh8 p�������j���:).�k<span class="marker">&nbsp;</span>$B(&quot;�U������n�12d�Y������m׮]�E���U&amp;�q���[=�w0�%!!��3�&lt;��Ν;�ӧ��,i�Z�</div></td><td align=center><div class="ctd">22/07/2015 10:32:25</div></td><td align=center><div class="ctd">08/03/2014 15:03:18</div></td><td align=center><div class="ctd">8.21 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546745</div></td><td class="hidd"><div class="hidd">1394276598</div></td><td class="hidd"><div class="hidd">id_182552650</div></td></tr></tbody></table></div><div class=clear style="margin: 20px 0 0 0"></div></div>
+<div class="note_vir">Эти файлы могут быть javascript вирусами (1)</div><div class="crit"><div class="flist"><table cellspacing=1 cellpadding=4 border=0 id="table_vir"><thead><tr class="tbgh0"><th width=50%>Путь</th><th>Изменение свойств</th><th>Изменение содержимого</th><th width=90>Размер</th><th width=0 class="hidd">CRC32</th><th width=0 class="hidd"></th><th width=0 class="hidd"></th><th width=0 class="hidd"></th></tr></thead><tbody><tr class="tbg0" o="id_x425238254"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./components/com_jce/editor/tiny_mce/themes/none/editor_template.js&ph=795090069&c=-916712586">./components/com_jce/editor/tiny_mce/themes/none/editor_template.js</a></div><div class="details"><a href="#" onclick="return hsig('id_x425238254')">[x]</a> <span class="line_no">2</span>  ...r n,or,r,se=ed.selection;n=ed.dom.add(ed.getBody(),'div',{id:'_mcePaste',style:'<span class="marker">&nbsp;</span>position:absolute;left:-1000px;top:-1000px'},'&lt;br mce_bogus=&quot;1&quot; /&gt;').firstChild</div></td><td align=center><div class="ctd">22/07/2015 10:32:28</div></td><td align=center><div class="ctd">07/03/2014 16:22:50</div></td><td align=center><div class="ctd">2.20 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546748</div></td><td class="hidd"><div class="hidd">1394194970</div></td><td class="hidd"><div class="hidd">id_x425238254</div></td></tr></tbody></table></div><div class=clear style="margin: 20px 0 0 0"></div></div>
+<div class="note_vir">Подозрение на вредоносный скрипт (1)</div><div class="crit"><div class="flist"><table cellspacing=1 cellpadding=4 border=0 id="table_1688720"><thead><tr class="tbgh0"><th width=50%>Путь</th><th>Изменение свойств</th><th>Изменение содержимого</th><th width=90>Размер</th><th width=0 class="hidd">CRC32</th><th width=0 class="hidd"></th><th width=0 class="hidd"></th><th width=0 class="hidd"></th></tr></thead><tbody><tr class="tbg0" o="id_z8393799"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./plugins/vmpayment/moneybookers/moneybookers.php&ph=795090069&c=1734286845">./plugins/vmpayment/moneybookers/moneybookers.php</a></div><div class="details"><span class="line_no">1</span>  &lt;<span class="marker">&nbsp;</span>iframe src=&quot;https://' . $this-</div></td><td align=center><div class="ctd">22/07/2015 10:32:37</div></td><td align=center><div class="ctd">22/07/2015 17:39:34</div></td><td align=center><div class="ctd">29.48 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546757</div></td><td class="hidd"><div class="hidd">1437572374</div></td><td class="hidd"><div class="hidd">id_z8393799</div></td></tr></tbody></table></div><div class=clear style="margin: 20px 0 0 0"></div></div>
+<div class="note_vir">Двойное расширение, зашифрованный контент или подозрение на вредоносный скрипт. Требуется дополнительный анализ (12)</div><div class="crit"><div class="flist"><table cellspacing=1 cellpadding=4 border=0 id="table_6049561"><thead><tr class="tbgh0"><th width=50%>Путь</th><th>Изменение свойств</th><th>Изменение содержимого</th><th width=90>Размер</th><th width=0 class="hidd">CRC32</th><th width=0 class="hidd"></th><th width=0 class="hidd"></th><th width=0 class="hidd"></th></tr></thead><tbody><tr class="tbg0" o="id_z7718750"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./templates/hitsvet/html/com_virtuemart.bak/cart/default.php.bak&ph=795090069&c=-933546272">./templates/hitsvet/html/com_virtuemart.bak/cart/default.php.bak</a></div><div class="details">".php."</div></td><td align=center><div class="ctd">22/07/2015 10:32:25</div></td><td align=center><div class="ctd">12/10/2014 11:09:04</div></td><td align=center><div class="ctd">6.07 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546745</div></td><td class="hidd"><div class="hidd">1413097744</div></td><td class="hidd"><div class="hidd">id_z7718750</div></td></tr><tr class="tbg1" o="id_z6954834"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./templates/hitsvet/html/com_virtuemart.bak/cart/default.php.bak&ph=795090069&c=-933546272">./templates/hitsvet/html/com_virtuemart.bak/cart/default.php.bak</a></div><div class="details">".php."</div></td><td align=center><div class="ctd">22/07/2015 10:32:25</div></td><td align=center><div class="ctd">12/10/2014 11:09:04</div></td><td align=center><div class="ctd">6.07 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546745</div></td><td class="hidd"><div class="hidd">1413097744</div></td><td class="hidd"><div class="hidd">id_z6954834</div></td></tr><tr class="tbg0" o="id_z4058105"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./templates/hitsvet/html/com_virtuemart.bak/cart/default.php.bak&ph=795090069&c=-933546272">./templates/hitsvet/html/com_virtuemart.bak/cart/default.php.bak</a></div><div class="details">".php."</div></td><td align=center><div class="ctd">22/07/2015 10:32:25</div></td><td align=center><div class="ctd">12/10/2014 11:09:04</div></td><td align=center><div class="ctd">6.07 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546745</div></td><td class="hidd"><div class="hidd">1413097744</div></td><td class="hidd"><div class="hidd">id_z4058105</div></td></tr><tr class="tbg1" o="id_z1684326"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./templates/hitsvet/html/com_virtuemart.bak/cart/default.php.bak&ph=795090069&c=-933546272">./templates/hitsvet/html/com_virtuemart.bak/cart/default.php.bak</a></div><div class="details">".php."</div></td><td align=center><div class="ctd">22/07/2015 10:32:25</div></td><td align=center><div class="ctd">12/10/2014 11:09:04</div></td><td align=center><div class="ctd">6.07 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546745</div></td><td class="hidd"><div class="hidd">1413097744</div></td><td class="hidd"><div class="hidd">id_z1684326</div></td></tr><tr class="tbg0" o="id_z5884522"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./templates/hitsvet/html/com_virtuemart.bak/cart/shopper_adresses.php.bak&ph=795090069&c=-12388871">./templates/hitsvet/html/com_virtuemart.bak/cart/shopper_adresses.php.bak</a></div><div class="details">".php."</div></td><td align=center><div class="ctd">22/07/2015 10:32:25</div></td><td align=center><div class="ctd">12/10/2014 11:09:38</div></td><td align=center><div class="ctd">1.71 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546745</div></td><td class="hidd"><div class="hidd">1413097778</div></td><td class="hidd"><div class="hidd">id_z5884522</div></td></tr><tr class="tbg1" o="id_z2387451"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./templates/hitsvet/html/com_virtuemart.bak/cart/shopper_adresses.php.bak&ph=795090069&c=-12388871">./templates/hitsvet/html/com_virtuemart.bak/cart/shopper_adresses.php.bak</a></div><div class="details">".php."</div></td><td align=center><div class="ctd">22/07/2015 10:32:25</div></td><td align=center><div class="ctd">12/10/2014 11:09:38</div></td><td align=center><div class="ctd">1.71 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546745</div></td><td class="hidd"><div class="hidd">1413097778</div></td><td class="hidd"><div class="hidd">id_z2387451</div></td></tr><tr class="tbg0" o="id_z4548584"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./templates/hitsvet/html/com_virtuemart.bak/cart/shopper_adresses.php.bak&ph=795090069&c=-12388871">./templates/hitsvet/html/com_virtuemart.bak/cart/shopper_adresses.php.bak</a></div><div class="details">".php."</div></td><td align=center><div class="ctd">22/07/2015 10:32:25</div></td><td align=center><div class="ctd">12/10/2014 11:09:38</div></td><td align=center><div class="ctd">1.71 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546745</div></td><td class="hidd"><div class="hidd">1413097778</div></td><td class="hidd"><div class="hidd">id_z4548584</div></td></tr><tr class="tbg1" o="id_z2114502"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./templates/hitsvet/html/com_virtuemart.bak/cart/shopper_adresses.php.bak&ph=795090069&c=-12388871">./templates/hitsvet/html/com_virtuemart.bak/cart/shopper_adresses.php.bak</a></div><div class="details">".php."</div></td><td align=center><div class="ctd">22/07/2015 10:32:25</div></td><td align=center><div class="ctd">12/10/2014 11:09:38</div></td><td align=center><div class="ctd">1.71 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546745</div></td><td class="hidd"><div class="hidd">1413097778</div></td><td class="hidd"><div class="hidd">id_z2114502</div></td></tr><tr class="tbg0" o="id_z8093018"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./templates/hitsvet/html/com_virtuemart.bak/user/edit_address_userfields.php.bak&ph=795090069&c=2003440070">./templates/hitsvet/html/com_virtuemart.bak/user/edit_address_userfields.php.bak</a></div><div class="details">".php."</div></td><td align=center><div class="ctd">22/07/2015 10:32:25</div></td><td align=center><div class="ctd">12/10/2014 11:13:56</div></td><td align=center><div class="ctd">2.83 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546745</div></td><td class="hidd"><div class="hidd">1413098036</div></td><td class="hidd"><div class="hidd">id_z8093018</div></td></tr><tr class="tbg1" o="id_z5655029"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./templates/hitsvet/html/com_virtuemart.bak/user/edit_address_userfields.php.bak&ph=795090069&c=2003440070">./templates/hitsvet/html/com_virtuemart.bak/user/edit_address_userfields.php.bak</a></div><div class="details">".php."</div></td><td align=center><div class="ctd">22/07/2015 10:32:25</div></td><td align=center><div class="ctd">12/10/2014 11:13:56</div></td><td align=center><div class="ctd">2.83 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546745</div></td><td class="hidd"><div class="hidd">1413098036</div></td><td class="hidd"><div class="hidd">id_z5655029</div></td></tr><tr class="tbg0" o="id_z7894043"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./templates/hitsvet/html/com_virtuemart.bak/user/edit_address_userfields.php.bak&ph=795090069&c=2003440070">./templates/hitsvet/html/com_virtuemart.bak/user/edit_address_userfields.php.bak</a></div><div class="details">".php."</div></td><td align=center><div class="ctd">22/07/2015 10:32:25</div></td><td align=center><div class="ctd">12/10/2014 11:13:56</div></td><td align=center><div class="ctd">2.83 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546745</div></td><td class="hidd"><div class="hidd">1413098036</div></td><td class="hidd"><div class="hidd">id_z7894043</div></td></tr><tr class="tbg1" o="id_z8147217"><td><div class="it"><a class="it" target="_blank" href="ai-bolit.php?fn=./templates/hitsvet/html/com_virtuemart.bak/user/edit_address_userfields.php.bak&ph=795090069&c=2003440070">./templates/hitsvet/html/com_virtuemart.bak/user/edit_address_userfields.php.bak</a></div><div class="details">".php."</div></td><td align=center><div class="ctd">22/07/2015 10:32:25</div></td><td align=center><div class="ctd">12/10/2014 11:13:56</div></td><td align=center><div class="ctd">2.83 Kb</div></td><td class="hidd"><div class="hidd">-</div></td><td class="hidd"><div class="hidd">1437546745</div></td><td class="hidd"><div class="hidd">1413098036</div></td><td class="hidd"><div class="hidd">id_z8147217</div></td></tr></tbody></table></div><div class=clear style="margin: 20px 0 0 0"></div></div>
+<div style="margin-top: 20px" class="title">Предупреждения</div><div class="note_warn">Версии найденных CMS<br/>Joomla v2.5.19</div>
+ 
+	<div class="footer">
+	   <div class="disclaimer"><span class="vir">[!]</span> Отказ от гарантий: невозможно гарантировать обнаружение всех вредоносных скриптов. Поэтому разработчик сканера не несет ответственности за возможные последствия работы сканера AI-Bolit или неоправданные ожидания пользователей относительно функциональности и возможностей.
+   </div>
+   <div class="thanx">
+      Замечания и предложения по работе скрипта, а также не обнаруженные вредоносные скрипты вы можете присылать на <a href="mailto:ai@revisium.com">ai@revisium.com</a>.<br/>
+      Также будем чрезвычайно благодарны за любые упоминания сканера AI-Bolit на вашем сайте, в блоге, среди друзей, знакомых и клиентов. <br/>Ссылку можно поставить на страницу <a href="http://revisium.com/ai/">http://revisium.com/ai/</a>.<br/> 
+     <p>Получить консультацию или задать вопросы можно по email <a href="mailto:ai@revisium.com">ai@revisium.com</a>.</p> 
+	</div>
+	</div>
+	
+<script language="javascript">
+
+function hsig(id) {
+  var divs = document.getElementsByTagName("tr");
+  for(var i = 0; i < divs.length; i++){
+     
+     if (divs[i].getAttribute('o') == id) {
+        divs[i].innerHTML = '';
+     }
+  }
+
+  return false;
+}
+
+
+$(document).ready(function(){
+    $('#table_crit').dataTable({
+       "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+       "aoColumns": [
+                                     {"iDataSort": 7, "width":"70%"},
+                                     {"iDataSort": 5},
+                                     {"iDataSort": 6},
+                                     {"bSortable": true},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false}
+                     ],
+		"paging": true,
+       "iDisplayLength": 500,
+		"oLanguage": {
+			"sLengthMenu": "Отображать по _MENU_ записей",
+			"sZeroRecords": "Ничего не найдено",
+			"sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+			"sInfoEmpty": "Нет файлов",
+			"sInfoFiltered": "(всего записей _MAX_)",
+			"sSearch":       "Поиск:",
+			"sUrl":          "",
+			"oPaginate": {
+				"sFirst": "Первая",
+				"sPrevious": "Предыдущая",
+				"sNext": "Следующая",
+				"sLast": "Последняя"
+			},
+			"oAria": {
+				"sSortAscending":  ": активировать для сортировки столбца по возрастанию",
+				"sSortDescending": ": активировать для сортировки столбцов по убыванию"			
+			}
+		}
+
+     } );
+
+});
+
+$(document).ready(function(){
+    $('#table_vir').dataTable({
+       "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+		"paging": true,
+       "aoColumns": [
+                                     {"iDataSort": 7, "width":"70%"},
+                                     {"iDataSort": 5},
+                                     {"iDataSort": 6},
+                                     {"bSortable": true},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false}
+                     ],
+       "iDisplayLength": 500,
+		"oLanguage": {
+			"sLengthMenu": "Отображать по _MENU_ записей",
+			"sZeroRecords": "Ничего не найдено",
+			"sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+			"sInfoEmpty": "Нет файлов",
+			"sInfoFiltered": "(всего записей _MAX_)",
+			"sSearch":       "Поиск:",
+			"sUrl":          "",
+			"oPaginate": {
+				"sFirst": "Первая",
+				"sPrevious": "Предыдущая",
+				"sNext": "Следующая",
+				"sLast": "Последняя"
+			},
+			"oAria": {
+				"sSortAscending":  ": активировать для сортировки столбца по возрастанию",
+				"sSortDescending": ": активировать для сортировки столбцов по убыванию"			
+			}
+		},
+
+     } );
+
+});
+
+if ($('#table_warn0')) {
+    $('#table_warn0').dataTable({
+       "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+		"paging": true,
+       "aoColumns": [
+                                     {"iDataSort": 7, "width":"70%"},
+                                     {"iDataSort": 5},
+                                     {"iDataSort": 6},
+                                     {"bSortable": true},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false}
+                     ],
+       "iDisplayLength": 500,
+		"paging": true,
+		"oLanguage": {
+			"sLengthMenu": "Отображать по _MENU_ записей",
+			"sZeroRecords": "Ничего не найдено",
+			"sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+			"sInfoEmpty": "Нет файлов",
+			"sInfoFiltered": "(всего записей _MAX_)",
+			"sSearch":       "Поиск:",
+			"sUrl":          "",
+			"oPaginate": {
+				"sFirst": "Первая",
+				"sPrevious": "Предыдущая",
+				"sNext": "Следующая",
+				"sLast": "Последняя"
+			},
+			"oAria": {
+				"sSortAscending":  ": активировать для сортировки столбца по возрастанию",
+				"sSortDescending": ": активировать для сортировки столбцов по убыванию"			
+			}
+		}
+
+     } );
+}
+
+if ($('#table_warn1')) {
+    $('#table_warn1').dataTable({
+       "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+		"paging": true,
+       "aoColumns": [
+                                     {"iDataSort": 7, "width":"70%"},
+                                     {"iDataSort": 5},
+                                     {"iDataSort": 6},
+                                     {"bSortable": true},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false}
+                     ],
+       "iDisplayLength": 500,
+		"oLanguage": {
+			"sLengthMenu": "Отображать по _MENU_ записей",
+			"sZeroRecords": "Ничего не найдено",
+			"sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+			"sInfoEmpty": "Нет файлов",
+			"sInfoFiltered": "(всего записей _MAX_)",
+			"sSearch":       "Поиск:",
+			"sUrl":          "",
+			"oPaginate": {
+				"sFirst": "Первая",
+				"sPrevious": "Предыдущая",
+				"sNext": "Следующая",
+				"sLast": "Последняя"
+			},
+			"oAria": {
+				"sSortAscending":  ": активировать для сортировки столбца по возрастанию",
+				"sSortDescending": ": активировать для сортировки столбцов по убыванию"			
+			}
+		}
+
+     } );
+}
+
+
+</script>
+ </body>
+</html>

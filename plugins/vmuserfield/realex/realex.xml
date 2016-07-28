@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<install version="1.5" type="plugin" group="vmuserfield" method="upgrade">
+    <name>Realex</name>
+    <creationDate>February 25 2014</creationDate>
+    <author>Valérie Isaksen</author>
+    <authorUrl>http://www.virtuemart.net</authorUrl>
+    <copyright>Copyright (C) 2004-2014 Virtuemart Team. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>2.5.1</version>
+    <description>Card storage plugin for Realex</description>
+    <languages>
+        <language tag="en-GB">en-GB.plg_vmuserfield_realex.ini</language>
+    </languages>
+    <files>
+        <filename plugin="realex">realex.php</filename>
+        <folder>realex</folder>
+    </files>
+    <params addpath="/plugins/vmuserfield/realex/elements"/>
+    <params addpath="/plugins/vmuserfield/realex/realex/elements"/>
+    <params addpath="/administrator/components/com_virtuemart/elements"/>
+    <params>
+        <param type="vmjpluginwarning"/>
+    </params>
+</install>

@@ -1,0 +1,54 @@
+
+#top_menu li a{float:left;}
+#ML{width:255px;}
+
+.manufacturer_list{overflow:hidden;width:98%;}
+.news_block li{width:48%;}
+
+#top_search{width:245px;}
+/*
+#mod-search-searchword{top:-1px;}
+#main_page_table td a, #hover_block a{font-size:12px;}
+#mod-search-searchword{line-height:32px;}
+*/
+
+#MT_Left .menu li.active li a span,#MT_Left .menu li li a:hover span{background:none;}
+		/*
+		.left_menu{border:1px solid #dfdfdf;background:#f9f9f9;-webkit-border-radius:6px;-moz-border-radius:6px;-khtml-border-radius:6px;border-radius:6px;}
+		#MT_Left .menu li{padding:0 0 0px 0px;}
+		#MT_Left .menu li.parent{background:url(../images/left_menu_triangle.gif) no-repeat scroll 250px 21px transparent;}
+		#MT_Left .menu li.parent li.parent{background-position:250px 12px;}
+		#MT_Left .menu li.parent li.active{background:none;}
+		#MT_Left .menu li a{height:52px;}
+		#MT_Left .menu li a span{font-size:14px;font-weight:bold;color:#2d2d2d;display:block;line-height:52px;padding:0 0 0 33px;position:relative;height:52px;cursor:pointer;}
+		
+		#MT_Left .menu li li a span{line-height:35px;}
+		#MT_Left .menu li a span,#MT_Left .menu li.active{border-bottom:1px solid #e8e8e8;}
+		
+		#MT_Left .menu li.active a span,#MT_Left .menu li a:hover span{background:url(../images/left_menu_active_bg.gif) repeat-x;color:#ffffff;display:block;position:relative;height:52px;cursor:pointer;}
+		
+		#MT_Left .menu li.active li{padding:0 30px 0 33px;}
+		#MT_Left .menu li.active li a,#MT_Left .menu li.active li a span{padding:0;}
+		
+		#MT_Left .menu li a.two_lines span,
+		#MT_Left .menu li.active li a.two_lines span{line-height:16px;padding-top:10px;padding-bottom:10px;}
+		
+		#MT_Left .menu li a.three_lines span,
+		#MT_Left .menu li.active li a.three_lines span{line-height:11px;font-size:12px;padding-top:10px;padding-bottom:10px;}
+		
+		
+		#MT_Left .menu li.active li a.padding_top_10 span{padding-top:10px;}
+		#MT_Left .menu li.active li a,#MT_Left .menu li.active li.active li a{border-bottom:1px solid #c4e3f5;}
+		#MT_Left .menu li.active li a span,#MT_Left .menu li.active li.active li a span,#MT_Left .menu li.active li.active li.active li a span{background:none;font-weight:normal;color:#0079c2;}
+		#MT_Left .menu li.active li a span,#MT_Left .menu li.active li.active{border-bottom:none;}
+		#MT_Left .menu li.active li a:hover, #MT_Left .menu li.active li.active li a:hover,#MT_Left .menu li.active li.active a {text-decoration:none;color:#e93654;border-bottom:none;}
+		#MT_Left .menu li.active li a:hover span,
+		#MT_Left .menu li.active li.active li a:hover span,
+		#MT_Left .menu li.active li.active li.active li a:hover span,
+		#MT_Left .menu li.active li.active a span,
+		#MT_Left .menu li.active li.active li.active a span,
+		#MT_Left .menu li.active li.active li.active li.active a span{color:#e93654;text-decoration:none;}
+		
+		#MT_Left .menu li.active li.active li.active li {padding:0 0 0 10px;}
+		#MT_Left .menu li.active li.active li.active li a span{font-size:12px;}
+		*/

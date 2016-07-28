@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<install version="1.5" type="plugin" group="vmpayment">
+    <name>Klarna Checkout</name>
+    <creationDate>December 19 2013</creationDate>
+    <author>The VirtueMart Development Team</author>
+    <authorUrl>http://www.virtuemart.net</authorUrl>
+    <copyright>Copyright (C) 2004-2013 Virtuemart Team. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>2.0.26a</version>
+
+
+    <files>
+        <filename plugin="klarnacheckout">klarnacheckout.php</filename>
+    </files>
+    <params addpath="/plugins/vmpayment/klarna/elements"/>
+    <params addpath="/plugins/vmpayment/klarna/klarna/elements"/>
+    <params addpath="/plugins/vmpayment/klarnacheckout/elements"/>
+    <params addpath="/plugins/vmpayment/klarnacheckout/klarnacheckout/elements"/>
+    <params addpath="/administrator/components/com_virtuemart/elements">
+        <param type="klarnalogo" level="level1"/>
+        <param type="klarnacurl"/>
+        <param type="customjs" default="" />
+
+        <param type="spacer" default="VMPAYMENT_KLARNACHECKOUT_WARNING" level="level1" />
+        <param name="documentation" type="klarnalabel" label="VMPAYMENT_KLARNA_DOCUMENTATION"
+               default="&lt;a href=&quot;http://cdn.klarna.com/1.0/shared/content/integration/guide/virtuemart.pdf&quot; target=&quot;_blank&quot;&gt;Documentation&lt;/a&gt;"/>/>
+        <param type="spacer" default="" level="level1" />
+        <param type="spacer" default="VMPAYMENT_KLARNACHECKOUT_PAYMENT_PARAMS" level="level1" />
+        <param name="purchase_country" type="vmcountry"   default=""
+               label="VMPAYMENT_KLARNACHECKOUT_PURCHASE_COUNTRY" description="VMPAYMENT_KLARNACHECKOUT_PURCHASE_COUNTRY_DESC"/>
+
+        <param name="merchantid" type="text" default="" label="VMPAYMENT_KLARNA_CONF_MERCHANT_ID"
+               description="VMPAYMENT_KLARNA_CONF_MERCHANT_ID_DESC"/>
+        <param name="sharedsecret" type="text" default="" label="VMPAYMENT_KLARNA_CONF_SHARED_SECRET"
+               description="VMPAYMENT_KLARNA_CONF_SHARED_SECRET_DESC"/>
+        <param name="server" type="list" default="0" label="VMPAYMENT_KLARNACHECKOUT_SERVER" description="VMPAYMENT_KLARNACHECKOUT_SERVER_DESC" >
+            <option value="beta">VMPAYMENT_KLARNACHECKOUT_SERVER_BETA</option>
+            <option value="live">VMPAYMENT_KLARNACHECKOUT_SERVER_LIVE</option>
+        </param>
+        <param name="payment_currency" type="vmacceptedcurrency"   default=""
+               label="VMPAYMENT_KLARNACHECKOUT_PURCHASE_CURRENCY" description="VMPAYMENT_KLARNACHECKOUT_PURCHASE_CURRENCY_DESC"/>
+
+        <param name="locale" type="getlanguage"   default=""
+               label="VMPAYMENT_KLARNACHECKOUT_LOCALE" description="VMPAYMENT_KLARNACHECKOUT_LOCALE_DESC"/>
+
+
+
+
+        <param type="spacer" default="" level="level1"/>
+        <param type="spacer" default="" level="level1"/>
+        <param type="spacer" default="VMPAYMENT_KLARNACHECKOUT_PAYMENT_PAGE" level="level1"/>
+        <param name="status_checkout_complete" type="vmorderstate" default="C"
+               label="VMPAYMENT_KLARNACHECKOUT_checkout_complete"
+               description="VMPAYMENT_KLARNACHECKOUT_checkout_complete_DESC"/>
+        <param name="status_activate" type="vmorderstate" default="S"
+               label="VMPAYMENT_KLARNACHECKOUT_ACTIVATE_RESERVATION"
+               description="VMPAYMENT_KLARNACHECKOUT_ACTIVATE_RESERVATION_DESC"/>
+        <param name="status_cancelReservation" type="vmorderstate" default="X"
+               label="VMPAYMENT_KLARNACHECKOUT_CANCEL_RESERVATION"
+               description="VMPAYMENT_KLARNACHECKOUT_CANCEL_RESERVATION_DESC"/>
+        <!--param name="status_changeReservation" type="vmorderstate" default="X"
+               label="VMPAYMENT_KLARNACHECKOUT_CHANGE_RESERVATION"
+               description="VMPAYMENT_KLARNACHECKOUT_CHANGE_RESERVATION_DESC"/ -->
+
+        <param type="spacer" default="" level="level1" />
+        <param type="spacer" default="VMPAYMENT_KLARNACHECKOUT_TEMPLATING" level="level1" />
+        <param name="payment_logos" class="payment_logos show_payment_logo" default="1" type="radio" label="VMPAYMENT_KLARNACHECKOUT_LOGOS"  description="VMPAYMENT_KLARNACHECKOUT_LOGOS_DESC">
+            <option value="0">COM_VIRTUEMART_NO</option>
+            <option value="1">COM_VIRTUEMART_YES</option>
+        </param>
+        <param class="show_payment_logo" type="vmtitle" default="" description="" />
+
+        <param type="spacer" default=""/>
+
+
+
+        <param type="spacer" default="" level="level1" />
+        <param type="spacer" default="VMPAYMENT_KLARNACHECKOUT_RESTRICTIONS" level="level1" />
+        <param name="min_amount" type="text" label="VMPAYMENT_KLARNACHECKOUT_MIN_AMOUNT"
+               description="VMPAYMENT_KLARNACHECKOUT_MIN_AMOUNT_DESC"/>
+        <param name="max_amount" type="text" label="VMPAYMENT_KLARNACHECKOUT_MAX_AMOUNT"
+               description="VMPAYMENT_KLARNACHECKOUT_MAX_AMOUNT_DESC"/>
+
+        <param name="debug" type="hidden" default="0" label="VMPAYMENT_KLARNACHECKOUT_DEBUG" description="VMPAYMENT_KLARNACHECKOUT_DEBUG_DESC" >
+        <option value="0">COM_VIRTUEMART_NO</option>
+        <option value="1">COM_VIRTUEMART_YES</option>
+    </param>
+
+        <param name="cost_percent_total" type="hidden" />
+        <param name="cost_per_transaction" type="hidden" />
+    </params>
+
+</install>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+	<name>HitSvet</name>
+	<creationDate>08.03.2014</creationDate>
+	<author>ALEXIUS</author>
+	<authorEmail></authorEmail>
+	<authorUrl></authorUrl>
+	<copyright></copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	<description></description>
+	<files>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<filename>index.php</filename>
+		<filename>index.html</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+	</files>
+	<positions>
+		<position>top1</position>
+		<position>top2</position>
+		<position>top_menu</position>
+		
+		
+		<position>right</position>
+		<position>before_content</position>
+		<position>before_content_center</position>
+		<position>after_content</position>
+		<position>module_in_content</position>
+		
+		<position>hidden</position>	
+		<position>down_part</position>	
+		<position>footer</position>	
+		<position>bottom_menu</position>	
+		<position>catalog</position>
+		<position>call_back</position>
+		
+	</positions>
+    <config>
+    </config>	
+</extension>

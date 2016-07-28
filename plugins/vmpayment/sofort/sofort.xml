@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<install version="1.5" type="plugin" group="vmpayment">
+    <name>Sofort</name>
+    <creationDate>December 19 2013</creationDate>
+    <author>The VirtueMart Development Team</author>
+    <authorUrl>http://www.virtuemart.net</authorUrl>
+    <copyright>Copyright (C) 2004-2013 Virtuemart Team. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>2.0.26a</version>
+    <description><![CDATA[<a href="http:/www.sofort.com" target="_blank">Sofort</a> is a popular
+	payment provider and available in many countries. ]]>
+    </description>
+
+    <files>
+        <filename plugin="sofort">sofort.php</filename>
+    </files>
+    <languages>
+        <language tag="en-GB">en-GB.plg_vmpayment_sofort.ini</language>
+    </languages>
+    <params addpath="/plugins/vmpayment/sofort/elements"/>
+    <params addpath="/plugins/vmpayment/sofort/sofort/elements"/>
+
+    <params addpath="/administrator/components/com_virtuemart/elements">
+        <param type="vmjpluginwarning"/>
+        <param type="spacer" default="VMPAYMENT_SOFORT_PAYMENT_TITLE" level="level1"/>
+        <param type="getsofort" level="level1"/>
+        <param type="manual" level="level1"/>
+
+        <param type="spacer" default="" level="level1"/>
+        <param type="spacer" default="VMPAYMENT_SOFORT_PAYMENT_SETTINGS" level="level1"/>
+        <param name="payment_logos" type="vmfiles" label="VMPAYMENT_SOFORT_LOGOS"
+               description="VMPAYMENT_SOFORT_LOGOS_DESC"
+               directory="/images/stories/virtuemart/payment"
+               default="default" hide_default="1" hide_none="1"
+               stripext="0" exclude="^_"/>
+        <param type="spacer" default="" level="level1"/>
+        <param type="spacer" default="VMPAYMENT_SOFORT_PARAMS" level="level1"/>
+        <param type="text" name="configuration_key" size="100" label="VMPAYMENT_SOFORT_CONFIGURATION_KEY"
+               default="" description="VMPAYMENT_SOFORT_CONFIGURATION_KEY_DESC"/>
+        <param name="buyer_protection" type="radio" default="0" label="VMPAYMENT_SOFORT_BUYER_PROTECTION"
+               description="VMPAYMENT_SOFORT_BUYER_PROTECTION_DESC">
+            <option value="0">COM_VIRTUEMART_NO</option>
+            <option value="1">COM_VIRTUEMART_YES</option>
+        </param>
+        <param type="spacer" default="" level="level1"/>
+        <param type="spacer" default="" level="level1"/>
+        <param type="spacer" default="VMPAYMENT_SOFORT_PAYMENT_PAGE" level="level1"/>
+        <param name="status_pending" type="vmorderstate" scope="com_virtuemart" default="U" label="VMPAYMENT_SOFORT_STATUS_PENDING" description="VMPAYMENT_SOFORT_STATUS_PENDING_DESC"/>
+        <param name="status_received" type="vmorderstate" scope="com_virtuemart" default="C" label="VMPAYMENT_SOFORT_STATUS_RECEIVED" description="VMPAYMENT_SOFORT_STATUS_RECEIVED_DESC"/>
+        <param name="status_loss" type="vmorderstate" scope="com_virtuemart" default="X"  label="VMPAYMENT_SOFORT_STATUS_LOSS" description="VMPAYMENT_SOFORT_STATUS_LOSS_DESC"/>
+        <param name="status_refunded" type="vmorderstate" scope="com_virtuemart" default="R" label="VMPAYMENT_SOFORT_STATUS_REFUNDED" description="VMPAYMENT_SOFORT_STATUS_REFUNDED_DESC"/>
+
+        <param type="spacer" default="" level="level1"/>
+        <param type="spacer" default="" level="level1"/>
+
+        <param type="spacer" default="VMPAYMENT_SOFORT_CURRENCIES" level="level1"/>
+        <!-- BY DEFAULT paypal currency= vendor currency -->
+        <param name="payment_currency" type="vmacceptedcurrency" default="" label="VMPAYMENT_SOFORT_CURRENCY"
+               description="VMPAYMENT_SOFORT_CURRENCY_DESC"/>
+        <param name="email_currency" type="list" default="vendor" label="VMPAYMENT_SOFORT_EMAIL_CURRENCY"
+               description="VMPAYMENT_SOFORT_EMAIL_CURRENCY_DESC">
+            <option value="vendor">VMPAYMENT_SOFORT_EMAIL_CURRENCY_VENDOR</option>
+            <option value="payment">VMPAYMENT_SOFORT_EMAIL_CURRENCY_PAYMENT</option>
+        </param>
+
+        <param type="spacer" default="" level="level1"/>
+        <param type="spacer" default="VMPAYMENT_SOFORT_RESTRICTIONS" level="level1"/>
+        <param name="countries" type="vmcountries" scope="com_virtuemart" default="" label="VMPAYMENT_SOFORT_COUNTRIES"
+               description="VMPAYMENT_SOFORT_COUNTRIES_DESC"/>
+        <param name="min_amount" type="text" label="VMPAYMENT_SOFORT_MIN_AMOUNT"
+               description="VMPAYMENT_SOFORT_MIN_AMOUNT_DESC"/>
+        <param name="max_amount" type="text" label="VMPAYMENT_SOFORT_MAX_AMOUNT"
+               description="VMPAYMENT_SOFORT_MAX_AMOUNT_DESC"/>
+        <param name="cost_per_transaction" type="text" label="VMPAYMENT_SOFORT_COST_PER_TRANSACTION"
+               description="VMPAYMENT_SOFORT_COST_PER_TRANSACTION_DESC"/>
+        <param name="cost_percent_total" type="text" label="VMPAYMENT_SOFORT_COST_PERCENT_TOTAL"
+               description="VMPAYMENT_SOFORT_COST_PERCENT_TOTAL_DESC"/>
+        <param name="tax_id" type="vmtaxes" scope="com_virtuemart" label="VMPAYMENT_SOFORT_TAX"
+               description="VMPAYMENT_SOFORT_TAX_DESC"/>
+          <param type="spacer" default="" level="level1"/>
+
+        <param name="debug" type="radio" default="0" label="VMPAYMENT_SOFORT_DEBUG"
+               description="VMPAYMENT_SOFORT_DEBUG_DESC">
+            <option value="0">COM_VIRTUEMART_NO</option>
+            <option value="1">COM_VIRTUEMART_YES</option>
+        </param>
+
+    </params>
+
+
+</install>
