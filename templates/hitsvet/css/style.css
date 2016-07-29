@@ -488,7 +488,7 @@ input[type="text"],input[type="password"],input[type="email"],textarea{
 	
 	
 	.in_stock_status,
-	.browse-view .addtocart-area{margin-top:15px;text-align: center;}
+	.browse-view .addtocart-area{margin-top:15px;/*text-align: center;*/}
 	
 	.browse-view .l_part h3{text-transform:uppercase;}
 	
@@ -509,7 +509,8 @@ input[type="text"],input[type="password"],input[type="email"],textarea{
 	.products_from_cat{padding:35px 0 0 0;}
 	.products_from_cat h2{margin-bottom:25px;}
 	
-	.vmCartModule{background:url(../images/cart_btn.png) no-repeat;width:145px;height:44px;margin-top:-20px;display:none;}
+	.vmCartModule{background:url(../images/cart_btn.png) no-repeat;width:145px;height:44px;margin-top:-20px;/*display:none;*/}
+    .vm_cart_products {display: none;}
 	.cart_block{padding:9px 0 0 47px;}
 	.cart_block .totalProducts{padding:0 0 0 5px;}
 	
@@ -647,3 +648,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
 .vm-pagination ul li span.pagenav,div.pagination span{border:1px solid #ff9e34;color:white;background: #ff9e34;box-shadow:inset 0 0 4px rgba(0,0,0,0.1);-moz-box-shadow:inset 0 0 4px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0 0 4px rgba(0,0,0,0.1);}
 ul.pagenav,div.pagination{margin:10px 0 0;padding:0;}
 ul.pagenav li,div.pagination li{list-style:none;display:inline-block;}
+
+.modal-dialog {
+	margin: 15% auto;
+}
+
+.btn {
+	color: black;
+	text-shadow: 1px 1px 3px #FFD200;
+}
+
+#MT_Center_wrap .button {
+	background: url(../images/sprites_bgs.png) repeat-x;
+	color: #fff;
+}
+
+.form-editpayment {
+	float: right;
+	padding-left: 20px;
+}

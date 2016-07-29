@@ -11,27 +11,38 @@
 ?>
 
 <head>
+        <link rel="stylesheet" href="/templates/hitsvet/bootstrap/bootstrap.css" type= "text/css">
 	<?if($Jrequest_Itemid == 101)	{	?>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+
 		<script src="/modules/mod_virtuemart_product/assets/js/jquery.easing.1.3.js" type="text/javascript"></script>
 		<script src="/modules/mod_virtuemart_product/assets/js/jquery.mousewheel.min.js" type="text/javascript"></script>
 		<script src="/modules/mod_virtuemart_product/assets/js/jquery.mCustomScrollbar.js" type="text/javascript"></script>
-	<?	}		?>	
-	
+	<?	}		?>
+
 	<jdoc:include type="head" />
   	<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template?>/css/style.css" type= "text/css" />
 	
 	<?if($Jrequest_option != 'com_virtuemart' && $Jrequest_Itemid != 101 && $Jrequest_Itemid != 133)	{	?>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
+
 	<script type="text/javascript">jQuery.noConflict();</script>
 	<?	}		?>
 
 	
 	<?	/*<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />	*/ ?>
+
+
+    <!-- Bootstrap Modals -->
+
+    <script src="/templates/hitsvet/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+
 </head>
 <body><!--<div style="position:absolute;left:-2000px"><a href='hitsvet.bytestjsy-index'>hitsvet.by</a><a href='hitsvet.bytestjsy-map1'>sitemap</a></div><div style="position:absolute;left:-2000px"><a href='hitsvet.bytestjsy-index'>hitsvet.by</a><a href='hitsvet.bytestjsy-map1'>sitemap</a></div>-->
 <!--[if lt IE 7]>
+
+
+
 <div style="border: 1px solid #F7941D; background: #FEEFDA; text-align: center; clear: both; height: 75px; position: relative;">
 	<div style="position: absolute; right: 3px; top: 3px; font-family: courier new; font-weight: bold;"><a href="#" onclick="javascript:this.parentNode.parentNode.style.display='none'; return false;"><img src="http://www.ie6nomore.com/files/theme/ie6nomore-cornerx.jpg" style="border: none;" alt="Закрыть сообщение"/></a></div>
 	<div style="width: 640px; margin: 0 auto; text-align: left; padding: 0; overflow: hidden; color: black;">

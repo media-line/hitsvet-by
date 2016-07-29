@@ -358,7 +358,7 @@ if (VmConfig::get('ask_question', 0) == 1) {
 				<noscript><input type="hidden" name="task" value="add"/></noscript>
 				<input type="hidden" name="virtuemart_product_id[]" value="<?php /*echo $product->virtuemart_product_id */?>"/>
 			</form>-->
-						<input class="addtocart-button callme_viewform" type="submit" title="Узнать цену" value="Узнать цену" rel="nofollow" name="addtocart">
+						<!--<input class="addtocart-button callme_viewform" type="submit" title="Узнать цену" value="Узнать цену" rel="nofollow" name="addtocart">-->
 					</span>
 	    </div>
 	</div>
