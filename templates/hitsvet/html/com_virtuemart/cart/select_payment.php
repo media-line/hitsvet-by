@@ -120,13 +120,14 @@ jQuery(document).ready(function () {
 <?php
 // если была нажата кнопка "Отправить"
 if($_POST['submit']) {
-    // $to - кому отправляем
-    $to = 'akravchenko@medidaline.by';
-    // $from - от кого
-    $from='akravchenko@medidaline.by';
-    $mess='есть заявка с сайта';
+				$subject = "письмо с сайта";
+    $message = "есть заявка с сайта";
     // функция, которая отправляет наше письмо.
-    mail($to, $mess, 'From:'.$from);
-    echo 'Спасибо! Ваше письмо отправлено.';
+    $mail = mail('akravchenko@medidaline.by', $subject, $message);
+						if ($mail == true) /*{
+								echo 'Спасибо! Ваше письмо отправлено.';
+						} else*/ {
+								echo 'К сожалению письмо не отправлено. Попробуйте еще раз или свяжитесь с нами по телефону.';
+						};
 }
 ?>
