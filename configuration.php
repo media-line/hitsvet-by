@@ -15,7 +15,7 @@ class JConfig {
 	public $host = 'localhost';
 	public $user = 'root';
 	public $password = '';
-	public $db = 'hitsvet_techdb';
+	public $db = 'hitsvet_db';
 	public $dbprefix = 'm0wfo_';
 	public $live_site = '';
 	public $secret = 'tzZl2cfqk3TnfrwJ';

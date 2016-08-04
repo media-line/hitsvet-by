@@ -195,5 +195,5 @@ $document->addStyleDeclaration ('#facebox .content {display: block !important; h
 		<input type='hidden' name='task' value='<?php echo $this->checkout_task; ?>'/>
 		<input type='hidden' name='option' value='com_virtuemart'/>
 		<input type='hidden' name='view' value='cart'/>
-	</form>
+    </form>
 </div>

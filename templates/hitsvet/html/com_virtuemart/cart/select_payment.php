@@ -23,6 +23,7 @@ $addClass="";
 
 $doc = JFactory::getDocument();
 $doc->addScript("http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js");
+$doc->addScript("https://raw.githubusercontent.com/digitalBush/jquery.maskedinput/1.4.1/dist/jquery.maskedinput.min.js");
 
 if (VmConfig::get('oncheckout_show_steps', 1)) {
     echo '<div class="checkoutStep" id="checkoutStep3">' . JText::_('COM_VIRTUEMART_USER_FORM_CART_STEP3') . '</div>';
@@ -36,7 +37,7 @@ if ($this->layoutName!='default') {
 		$buttonclass = 'default';
 	}
 ?>
-	<form method="post" id="paymentForm ntcn1" name="choosePaymentRate" action="<?php echo JRoute::_('index.php'); ?>" class="form-validate <?php echo $addClass ?>">
+	<form method="post" id="paymentForm" name="choosePaymentRate" action="<?php echo JRoute::_('index.php'); ?>" class="form-validate <?php echo $addClass ?>">
 <?php } else {
 		$headerLevel = 3;
 		$buttonclass = 'vm-button-correct';
@@ -99,35 +100,76 @@ jQuery(document).ready(function () {
 });
 </script>
 
+<script type="text/javascript">
+    jQuery(function($){
+        $("#phone").mask("+375 (99) 999-99-99");
+    });
+</script>
+
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        Извините процессинговый центр временно недоступен, оплата картой невозможна. <br/><br/> Для связи с менеджером  и согласования способа оплаты и доставки заказа нажмите кнопку "Отправить письмо менеджеру". <br/><br/> Если же Вы хотите продоолжить оформление заказа, то Вам необходимо выбрать в качестве способа оплаты - оплату наличными.
+        Извините процессинговый центр временно недоступен, оплата картой невозможна. <br/><br/> Для связи с менеджером  и согласования способа оплаты и доставки заказа, введите свой номер телефона в поле ниже и нажмите кнопку "Отправить письмо менеджеру". <br/>
+
+
+
+          <br/>Если же Вы хотите продоолжить оформление заказа, то Вам необходимо выбрать в качестве способа оплаты - оплату наличными.
       </div>
       <div class="modal-footer">
         <!--<button type="button" class="button" data-dismiss="modal">Отправить письмо менеджеру</button>-->
           <form action="" method="post" class="form-editpayment">
-            <input type="submit" class="button" value="Отправить письмо менеджеру" name="submit">
+              <label>Введите свой номер телефона</label>
+              <input class="editpayment" type="tel" name="tel" id="phone" title="Номер телефона" required />
+              <input type="submit" class="button" value="Отправить письмо менеджеру" name="mail">
           </form>
-        <button type="button" class="button" data-dismiss="modal">Закрыть</button>
+          <button type="button" class="button" data-dismiss="modal">Закрыть</button>
       </div>
     </div>
   </div>
 </div>
 
 <?php
+
+$pr_name = array();
+$pr_qua = array();
+
+foreach ($this->cart->products as $pkey => $prow) {
+    $product_name = $prow->product_name;
+    $quantity = $prow->quantity;
+
+    array_push($pr_name, $product_name);
+    array_push($pr_qua, $quantity);
+};
+
+//входные данные необходимые для корректного заполнения письма
+$num = count($pr_qua) - 1;
+$tel = $_POST['tel'];
+
 // если была нажата кнопка "Отправить"
-if($_POST['submit']) {
-				$subject = "письмо с сайта";
-    $message = "есть заявка с сайта";
+if($_POST['mail']) {
+
+	$subject = "письмо с сайта, по оплате Пластиковой картой";
+
+    //тело письма
+    $message = 'на сайте заказано';
+    $message .= '<table><tr><td>Наименование товара</td><td>Количество, шт.</td></tr>';
+    for ($i=0; $i<=$num; $i++) {
+        $message .= '<tr><td>'.$pr_name[$i].'</td><td>'.$pr_qua[$i].'</td></tr>';
+    }
+    $message .= '</table>';
+    $message .= 'телефон для связи с клиентом - '.$tel;
+
+    //заголовки
+    $headers= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-type: text/html; charset=utf-8\r\n";
     // функция, которая отправляет наше письмо.
-    $mail = mail('akravchenko@medidaline.by', $subject, $message);
-						if ($mail == true) /*{
+    $mail = mail('hitsvet@hitsvet.by', $subject, $message, $headers);
+						if ($mail == true) {
 								echo 'Спасибо! Ваше письмо отправлено.';
-						} else*/ {
-								echo 'К сожалению письмо не отправлено. Попробуйте еще раз или свяжитесь с нами по телефону.';
+						} else {
+								echo 'К сожалению письмо не отправлено. Попробуйте еще раз или свяжитесь с нами по телефону указанному в верхней части сайта.';
 						};
 }
 ?>
