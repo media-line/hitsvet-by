@@ -667,3 +667,7 @@ ul.pagenav li,div.pagination li{list-style:none;display:inline-block;}
 	float: right;
 	padding-left: 20px;
 }
+
+.vmCartModule > .total {
+    display: none;
+}
