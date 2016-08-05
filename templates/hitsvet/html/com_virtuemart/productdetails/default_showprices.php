@@ -21,9 +21,9 @@ defined ('_JEXEC') or die('Restricted access');
 ?>
 <div class="product-price" id="productPrice<?php echo $this->product->virtuemart_product_id ?>">
 	<?php
-	if (!empty($this->product->prices['salesPrice'])) {
+	/*if (!empty($this->product->prices['salesPrice'])) {
 		echo "<strong>" . JText::_ ('COM_VIRTUEMART_CART_PRICE') . "</strong>" ;
-	}
+	}*/
 	vmdebug('view productdetails layout default show prices, prices',$this->product);
 	if ($this->product->prices['salesPrice']<=0 and VmConfig::get ('askprice', 1) and isset($this->product->images[0]) and !$this->product->images[0]->file_is_downloadable) {
 		?>
